@@ -1,0 +1,159 @@
+.brief {
+  width: 90vw;
+  height: 90vh;
+  left: 200vw;
+  top: 5vh;
+  border-radius: 20px;
+  z-index: 56;
+  background: rgba(0, 0, 0, 0.9);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition-duration: 1s;
+  box-shadow: 10vw 0 30px rgba(250, 250, 200, 0.4);;
+  padding: 0;
+}
+
+.logo-brief {
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+
+}
+
+.title-brief, .text-brief {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+}
+
+.text-brief {
+  font-weight: lighter;
+}
+
+
+.close-brief {
+  position: absolute;
+  top: 3vh;
+  right: 3vh;
+}
+
+.form {
+  left: 100vw;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+td {
+  padding: 1vh;
+}
+
+table {
+  width: 90%;
+  text-align: center;
+  left: 5%;
+}
+
+.btn-table {
+  margin-top: 7vh;
+}
+
+.btn-form {
+  position: relative;
+  margin: 7vh;
+}
+
+
+
+@media (orientation: portrait) {
+table {
+    margin: 10vw 0;
+}
+
+td {
+  padding: 2vw;
+}
+
+.brief {
+  width: 90%;
+  height: 90%;
+  left: 200vw;
+  padding: 0;
+  top: 5vh;
+}
+
+.form {
+  left: 100vw;
+}
+
+.logo-brief {
+  width: 25vw;
+  height: 25vw;
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  margin: 0;
+}
+
+
+.title-brief {
+  margin: 0;
+}
+
+.text-brief {
+  padding: 2vw 10vw;
+}
+
+.btn-table {
+  margin-top: 6vh;
+}
+
+.btn-form {
+  margin: 0;
+  position: relative;
+}
+
+.close-brief {
+
+}
+
+  }
