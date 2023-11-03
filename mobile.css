@@ -15,7 +15,7 @@
     top: 0vh;
     left: -11vw;
     z-index: -100;
-
+    display: none;
 }
 
   .card:hover {
