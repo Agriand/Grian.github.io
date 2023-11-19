@@ -34,10 +34,10 @@
 
 .black {
   width: 100vw;
-  height: 10vh;
+  height: 20vh;
   background: black;
   position: fixed;
-  bottom: 20vh;
+  bottom: 0vh;
 }
 
 .pilih {
