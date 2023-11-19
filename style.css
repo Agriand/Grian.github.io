@@ -65,6 +65,88 @@ body::-webkit-scrollbar {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
+.about {
+    border: 1px solid white;
+    width: 80vw;
+    height: 80vh;
+    padding: 14px;
+}
+
+.about-background {
+            border-radius: 5px; 
+            backdrop-filter: blur(14px); 
+            background-color: rgba(20, 20, 20, 0.2); 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+}
+
+.close-about {
+    position: absolute;
+    right: 0vw;
+    display: ;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+.close-about:hover {
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    border: 1px solid white;
+
+}
+
+.about-content {
+
+    display: flex;
+    z-index: 24;
+    padding: 10vw;
+}
+
+.text-about {
+    margin-top:  5vh;
+    text-align: right;
+}
+
+.logo-about {
+    top: 4vw;
+    box-sizing: border-box;
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    left: 35vw;
+}
+
+.contact {
+    position: absolute;
+    bottom: 10vh;
+    width: 20vw;
+    left: 30vw;
+}
+
+.img-con {
+    width: 4vh;
+    height: 4vh;
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color:  gray;
+}
+
+td {
+    text-align: left;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400');
 /* RESET STYLE */
 
@@ -335,13 +417,6 @@ ul a:hover {
     border-left: 4px solid white        ;
 }
 
-.swiper-slide-logo {
-    width: 15vw;
-    /* background: green; */
-    height: 15vw;
-    overflow: hidden;
-}
-
 .img-feeds {
     width: 100%;
     height: auto;
@@ -564,45 +639,6 @@ p {
     left: 30vw;
     top: 15 vh;
     transform: rotateZ(15deg);
-}
-
-
-.swiper-banner {
-    width: 60vw;
-}
-
-.swiper-wrapper-banner {
-    width: 80vw;
-    position: absolute;
-}
-
-.swiper-wrapper-creations {
-
-}
-
-.swiper-slide-banner {
-    height: 82vh;
-    padding: 0;
-    border: none;
-    width: 100%;
-    height: 100%;
-    /* border: 1px solid green; */
-}
-
-.swiper-slide-crea {
-    border: none;
-}
-
-.img-banner {
-    border: none;
-}
-
-
-.img-crea {
-     height: 70vh;
-     border: 3px solid white;
-     border-radius: 20px;
-    width: 70vh;
 }
 
 

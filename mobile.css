@@ -8,30 +8,54 @@
   }
 
 
+  .welcome {
+    top: 10vh;
+    left: 3vh;
+  }
+
+  .me {
+    top:  0vh;
+  }
+
+  .agrian {
+    top:  4vh;
+    left: 4vh;
+  }
+
+
 .main-content {
-    width: 110vw;
-    height: 110vh;
+    width: 120vw;
+    height: 80vh;
     position: absolute;
     top: 0vh;
-    left: -11vw;
-    z-index: -100;
-    display: none;
+    left: -15vw;
+    z-index: -10000;
 }
 
-  .card:hover {
-    border:none;
-  }
+.black {
+  width: 100vw;
+  height: 10vh;
+  background: black;
+  position: fixed;
+  bottom: 20vh;
+}
 
-  .container {
+.pilih {
+  position: absolute;
+  width: 100vw;
+  height: 20vh;
+  bottom: 1vh;
+}
+
+
+.card:hover {
+    border:none;
+}
+
+.container {
     left: 20vw;
     top: 37vh;  
-  }
-
-  .swiper {
-        width: 60vw;
-        left:  0vw;
-        height: auto;
-      }
+}
 
 
 .container0 {
@@ -57,17 +81,7 @@ ul a {
   padding: 0;
 }
 
-.swiperLogo {
-  position: relative;
-  width: 100%;
-}
 
-.swiper-slide-logo {
-  width: 30vw;
-  border: 1px solid white;
-  height: 30vw;
-
-}
 .js-angle-slider__list {
   top:  0;
 }
@@ -225,30 +239,27 @@ ul a {
   
 } 
 
-.swiper-slide-fh {
-
-}
-
 .feeds-home {
   width: 50vw;
 }
 
-.swiper-wrapper-feeds-home {
-}
-
 .img-crea {
-    height: 60vw;
+    height: 30vw;
      border: 3px solid white;
      border-radius: 20px;
-    width: 60vw;
+    width: 30vw;
     margin-top: 60%;
 }
 
 .btn-design {
-  bottom: 7vh;
+  scale:  0.7;
+  bottom: 3vh;
+  border: none;
+  left: 10vw;
   z-index: 10;
   text-align: center;
-  padding: 2vh 8vw;
+  display: none;
+  padding: 1vh 0vw;
 }
 
 .btn-close-popup {
@@ -261,4 +272,36 @@ ul a {
   right: 5vw;
 }
 
+.about {
+
 }
+
+.about-content {
+  flex-direction: column;
+  top: 20vh;
+  position: absolute;
+}
+
+
+.logo-about {
+  top:  10vw;
+  width: 30vw;
+  height: 30vw;
+  left:  25vw;
+}
+
+.text-about {
+  margin-top: 0vh;
+}
+
+
+.contact {
+    scale: 0.6;
+    position: absolute;
+    bottom: -5vh;
+    width: 20vw;
+    left: 15vw;
+}
+
+}
+

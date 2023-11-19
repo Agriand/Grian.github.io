@@ -10,9 +10,16 @@
   <!-- font icons -->
   <!-- Bootstrap + LeadMark main styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobile.css">
   <link rel="stylesheet" href="brief.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="swiper.css">
+  
   <!-- ok -->
 </head>
 
@@ -26,10 +33,10 @@
   </div> -->
 
   <!-- navbar -->
-  <div class="welcome">
+<!--   <div class="welcome">
     <img class="logo" src="img/Agrian.svg">  
     <h1 class="me">3D Artist</h1>
-  </div>
+  </div> -->
 
   <!-- navbar desktop -->
   <nav class="nav-desktop">
@@ -55,9 +62,8 @@
 
     <ul class="ul-nav-mobile">
       <a onclick="showPopup(); showPopup3d();" href="#">3D</a>
-      <a onclick="showPopup(); showPopupFeeds();" href="#">Feeds</a>
+      <a onclick="showPopup(); showPopupFeeds();" href="#">Animation</a>
       <a onclick="showPopup(); showPopupCreations();" href="#">Creations</a>
-      <a onclick="showPopup(); showPopupBanner();" href="#">Banner</a>
     </ul>
 
     <img class="logo-nav" src="img/Agrian.svg">
@@ -65,7 +71,7 @@
   </div>
 
   <!-- navbar mobile -->
-  <a onclick="showPopup(); showPopupBanner();" class="btn-design">Contact</a>
+  <a onclick="showPopup();  showPopupBanner();" class="btn-design">Contact</a>
   <div id="form" class="brief form">
     <img class="logo-brief" src="img/Agrian.svg">
     <button class="btn-close-popup close-brief" onclick="closePopup()">x</button>
@@ -185,61 +191,36 @@
   </script>
 
 
-  <!-- 3d -->
-  <!-- <div class="tridi">
-    <iframe scrolling="no" src="3d.html" class="iframe-tridi">
+ <div   style=";" class="main-content">
+      <iframe id="ichange" allowfullscreen width="100%" height="100%" loading="lazy" frameborder="0" src="https://p3d.in/e/1hkf3+spin+load"></iframe>
 
-    </iframe> 
-  </div>   -->
-  <!-- 3d -->
-
-  <!-- Feeds -->
-
- <div   style=";" id="da" class="main-content">
-   <iframe id="da" allowfullscreen width="100%" height="100%" loading="lazy" frameborder="0" src="https://p3d.in/e/1hkf3+spin+load"></iframe>
  </div>
 
-  <div  style="left: -100vw;" id="db" class="main-content">
-   <iframe allowfullscreen width="100%" height="100%" loading="lazy" frameborder="0" src="https://p3d.in/e/abDru+spin+load"></iframe>
- </div>  
+<div class="black"></div>
 
- <div  style="left: -100vw;" id="dc" class="main-content">
-   <iframe allowfullscreen width="100%" height="100%" loading="lazy" frameborder="0" src="https://p3d.in/e/DjkkY+spin+load"></iframe>
- </div>
+<div class="pilih">
 
- <div  style="left: -100vw;" id="dd" class="main-content">
- <iframe allowfullscreen width="100%" height="100%" l100%oading="lazy" frameborder="0" src="https://p3d.in/e/BECNU+spin+load"></iframe>
-</div>
-
- <div  style="left: -100vw;" id="de" class="main-content">
-<iframe allowfullscreen width="100%" height="100%" loading="lazy" frameborder="0" src="https://p3d.in/e/ZTIs0+spin+load"></iframe>
-</div>
-
-  <div class="js-angle-slider" style="z-index:1;"> 
-    <!--
-    prev,nextボタン
-  --><!-- 
-  <div class="js-angle-slider__pager">
-    <button class="js-angle-slider__prev" type="button">
-      prev
-    </button>
-    <button class="js-angle-slider__next" type="button">
-      next
-    </button>
-  </div>
-   -->
-    <div class="js-angle-slider__body">
-
-      <div class="js-angle-slider__list" data-slide-angle="12" data-show="7" data-speed="400"
-        data-drag-speed-ratio="0.1" data-dots="true">
-        <div onclick="dashow()" class="js-angle-slider__item" ><div class="img-2"><img class="img-muter" src="img/syn.jpg"> </div></div>
-        <div onclick="dbshow()" class="js-angle-slider__item" ><div class="img-2"><img class="img-muter" src="img/vio.jpg"> </div></div>
-        <div onclick="dcshow()" class="js-angle-slider__item" ><div class="img-2"><img class="img-muter" src="img/ht.jpg"> </div></div>
-        <div onclick="ddshow()" class="js-angle-slider__item" ><div class="img-2"><img class="img-muter" src="img/fox.jpg"> </div></div>
-        <div onclick="deshow()" class="js-angle-slider__item" ><div class="img-2"><img class="img-muter" src="img/san.jpg"> </div></div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img onclick="dashow()" src="img/syn.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img onclick="dbshow()" src="img/vio.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img onclick="dcshow()" src="img/ht.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img onclick="ddshow()" src="img/fox.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img onclick="ddshow()" src="img/san.jpg" />
       </div>
     </div>
   </div>
+
+</div>
 
   <!-- lightbox -->
   <div onclick="closePopup()" id="lightbox" class="lightbox"></div>
@@ -251,14 +232,16 @@
 
   <div id="popup3d" class="popup-banner">
     <button id="closePopup" onclick="closePopup()" class="btn-close-popup">x</button>
-  </div>
 
+  </div>  
   <div id="popupFeeds" class="popup-banner">
-    <button id="closePopup" onclick="closePopup()" class="btn-close-popup">x</button>s
+    <button id="closePopup" onclick="closePopup()" class="btn-close-popup">x</button>
+
   </div>
 
   <div id="popupCreations" class="popup-banner">
     <button id="closePopup" onclick="closePopup()" class="btn-close-popup">x</button>
+    
   </div>
 
   <div id="popupBanner" class="popup-banner">
@@ -268,45 +251,82 @@
     <div class="about">
       <h4 class="title-about">About</h4>
       <div class="about-content">
-        <p class="text-about" style="margin-right: 1vw;">hello I'm Agrian, I am a 3D artist who creates art objects, visualizes ideas, and also animations.</p>
-        <p class="text-about" style="text-align: left; margin-left: 1vw;">I always follow this principle “Good logic! is an enemy of creativeness.”
+        <p class="text-about" style="text-align: center;">hello I'm Agrian, I am a 3D artist who creates art objects, visualizes ideas, and also animations.</p>
+        <p class="text-about" style="text-align: center;">I always follow this principle “Good logic! is an enemy of creativeness.”
 ― Pablo Picasso. So I put my self to less belief to logic things.</p>
-      </div>
-    </div>
-
+</div>
 
     <div class="contact">
       <table>
         <tr>
           <td><img class="img-con" src="gmail.svg"></td>
-          <td><a href="https://mail.google.com/mail/">Rifalagrian@gmail.com<a></td>
+          <td  style="text-align: left;"><a href="https://mail.google.com/mail/">Rifalagrian@gmail.com<a></td>
         </tr>
         <tr>
-          <td><img class="img-con" src="ig.svg"></td>
-          <td><a href="https://www.instagram.com/rifalagrian/">Rifalagrian</a></td>
+          <td ><img class="img-con" src="ig.svg"></td>
+          <td style="text-align: left;"><a href="https://www.instagram.com/rifalagrian/">Rifalagrian</a></td>
         </tr>
         <tr>
           <td><img class="img-con" src="fb.svg"></td>
-          <td><a href="https://www.facebook.com/ragneraz/">Rifal Agrian</a></td>
+          <td style="text-align: left;"><a href="https://www.facebook.com/ragneraz/">Rifal Agrian</a></td>
         </tr>
         <tr>
-          <td><img class="img-con" src="wa.svg"></td>
-          <td><a href="https://wa.me/qr/EBEOR3T5SBPOO1">+6283106300509</a></td>
+          <td style="text-align: left;"><img class="img-con" src="wa.svg"></td>
+          <td style="text-align: left;"><a href="https://wa.me/qr/EBEOR3T5SBPOO1">+6283106300509</a></td>
         </tr>
       </table>
     </div>
   </div>
+  </div>
 
   <!-- PopUp -->
 
-
   <script src="js/main.js"></script>
   <script src="js/bawah.js"></script>
-  <script>
-
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
+    var ic = document.getElementById("ichange");
+
+        function dashow() {
+        ic.src = "https://p3d.in/e/1hkf3+spin+load";
+    }
+
+        function dbshow() {
+        ic.src = "https://p3d.in/e/abDru+spin+load";
+    }
+
+        function dcshow() {
+        ic.src = "https://p3d.in/e/DjkkY+spin+load";
+    }
+
+        function ddshow() {
+        ic.src = "https://p3d.in/e/BECNU+spin+load";
+    }
+
+        function deshow() {
+        ic.src = "https://p3d.in/e/ZTIs0+spin+load";
+    }
+
+
+       var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
+
     window.addEventListener("load", function () {
       var bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
       bannerNode.parentNode.removeChild(bannerNode);
@@ -357,8 +377,7 @@
     });
 
 if(window.innerHeight > window.innerWidth){
-  location.href = "file:///D:/GitHub/agriandesign/Mobile.html"
-}
+  }
 
 if(window.innerWidth > window.innerHeight){
 
@@ -368,12 +387,14 @@ window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
     const portrait = e.matches;
 
     if (portrait) {
-  location.href = "file:///D:/GitHub/agriandesign/mobile.html"
 
     } else {
+   location.href = "file:///D:/GitHub/agriandesign/index.html"
         
     }
 });
+
+
   </script>
 </body>
 
